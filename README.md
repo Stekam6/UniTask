@@ -12,7 +12,7 @@ Provides an efficient allocation free async/await integration for Unity.
 * Asynchronous LINQ, with Channel and AsyncReactiveProperty
 * TaskTracker window to prevent memory leaks
 * Highly compatible behaviour with Task/ValueTask/IValueTaskSource
-
+    
 For technical details, see blog post: [UniTask v2 — Zero Allocation async/await for Unity, with Asynchronous LINQ
 ](https://medium.com/@neuecc/unitask-v2-zero-allocation-async-await-for-unity-with-asynchronous-linq-1aa9c96aa7dd)  
 For advanced tips, see blog post: [Extends UnityWebRequest via async decorator pattern — Advanced Techniques of UniTask](https://medium.com/@neuecc/extends-unitywebrequest-via-async-decorator-pattern-advanced-techniques-of-unitask-ceff9c5ee846)
