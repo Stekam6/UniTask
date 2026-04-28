@@ -22,7 +22,9 @@ jobs:
       - run: dotnet pack -c Release --no-build -p:IncludeSymbols=true -o $GITHUB_WORKSPACE/artifacts
        # NEU: kompletten NuGet-Cache als publish-Artifact verpacken
       - name: Stage NuGet cache for SBOM scan
-        run: mkdir -p $GITHUB_WORKSPACE/publish cp -r ~/.nuget/packages $GITHUB_WORKSPACE/publish/nuget-cache
+        run: |
+          mkdir -p $GITHUB_WORKSPACE/publish
+          cp -r ~/.nuget/packages $GITHUB_WORKSPACE/publish/nuget-cache
         
       - name: Upload publish output
         uses: actions/upload-artifact@v4
