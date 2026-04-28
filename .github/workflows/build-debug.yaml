@@ -21,6 +21,7 @@ jobs:
       - run: dotnet test -c Release
       - run: dotnet pack -c Release --no-build -p:IncludeSymbols=true -o $GITHUB_WORKSPACE/artifacts
       #PUBLISH OUTPUT
+      - run: dotnet publish -c Release -o $GITHUB_WORKSPACE/publish
       - name: Upload publish output
         uses: actions/upload-artifact@v4
         with:
